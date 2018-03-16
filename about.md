@@ -10,7 +10,7 @@ key: page-about
 
 xingruidong
 
-{% highlight javascript %}
+{% highlight %}
 华为外包 信息安全努力中
 {% endhighlight %}
 
