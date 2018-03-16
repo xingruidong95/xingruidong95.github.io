@@ -8,10 +8,10 @@ titles:
 key: page-about
 ---
 
-Just say something about yourself. :+1:
+xingruidong
 
 {% highlight javascript %}
-(() => console.log('hello, world!'))();
+华为外包 信息安全努力中
 {% endhighlight %}
 
-## title
+
