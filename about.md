@@ -8,10 +8,8 @@ titles:
 key: page-about
 ---
 
-xingruidong
+luckyeast
 
-{% highlight javascript %}
-华为外包 信息安全努力中
-{% endhighlight %}
+> 信息安全方向努力中
 
 
