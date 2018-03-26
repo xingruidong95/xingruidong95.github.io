@@ -76,3 +76,34 @@ Do intercept选项可以针对此消息来拦截其服务器返回的信息。
 - Miscellaneous
 
 ### Intercept Client Requests
+>拦截规则配置  
+>错误消息自动修复  
+>自动更新Content-Length消息头
+
+#### 拦截规则配置
+如果intercept request based on the follow rules被选中，则按下方勾选的规则进行拦截。要注意，拦截时对规则的执行是自上而下的。可以通过点击Up和Down按钮对规则的顺序进行调节。  
+Operator是指当前规则与其它规则之间的关系，or 或者 and  
+Match type是指匹配类型，如域名、IP地址、协议、请求方法、URL等  
+Relationship是指此条规则是否匹配Condition中输入的关键字  
+
+#### 错误消息自动修复
+如果Automatically fix missing or superfluous new lines at end of request被选中，则表示在消息传输中，Brupsuite会自动修复丢失或多余的新行。  
+>一条被修改过的请求消息，如果丢失了头部结束的空行，Brupsuite会自动添加上；如果一次请求的消息体中，URL编码参数中包含任何新的换行，Brupsuite将会移除。此项功能在手工修改请求消息时，为了防止错误，有很好的保护效果。  
+
+#### 自动更新Content-Length消息头
+如果Automatically update Content-Length header when the request is edited被选中，则当请求的消息被修改后，Content-Length消息头部也会自动被修改，替换为与之相对应的值。  
+
+### Intercept Server Responses
+与Intercept Client Requests功能类似  
+
+### Response Modification
+每一个选项分别对应的功能如下：
+>显示form表单中隐藏字段  
+>高亮显示form表单中隐藏字段  
+>使form表单中的disable字段生效，变成可输入域  
+>移除输入域长度限制  
+>移动JavaScript验证  
+>移动所有的JavaScript  
+>移除标签  
+>转换https超链接为http链接  
+>移除所有cookie中的安全标志  
