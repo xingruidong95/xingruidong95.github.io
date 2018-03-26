@@ -47,7 +47,7 @@ Do intercept选项可以针对此消息来拦截其服务器返回的信息。
 ### 过滤器
 单击Filter处，弹出过滤器界面，该界面分为七个部分
 - Filter by request type
-  >Show only in-scope item(仅显示当前作用域)  
+  >Show only in-scope item(仅显示当前作用域)  
   >Hide items without responses(仅显示服务器响应)  
   >Show only parameterized request(仅显示带有请求参数的)
 - Filter by search term
