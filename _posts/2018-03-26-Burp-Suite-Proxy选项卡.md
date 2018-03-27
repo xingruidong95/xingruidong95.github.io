@@ -2,7 +2,7 @@
 layout: post
 title: Burp Suite Proxy选项卡
 key: 20180326
-tags: Burp Suite
+tags: BurpSuite
 ---
 
 关于Burp Suite中Proxy选项卡的各功能介绍
