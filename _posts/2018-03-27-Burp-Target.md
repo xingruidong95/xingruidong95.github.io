@@ -18,6 +18,7 @@ tags: BurpSuite
 >访问的URL列表  
 >Contents  
 >Issues  
+
 ### 访问的URL列表
 按照网站的层级和深度，树形展示整个应用系统的结构和关联其他域的url情况。
 
