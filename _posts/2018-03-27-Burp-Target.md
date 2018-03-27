@@ -55,6 +55,7 @@ tags: BurpSuite
 - Dynamic URLs
 - Static URLs
 - Parameters
+
 #### Summary
 >该视图主要展示当前站点动态URL数量、静态URL数量、参数的总数、唯一的参数名数目，通过这些信息，我们对当前站点的总体状况有粗线条的了解。
 
