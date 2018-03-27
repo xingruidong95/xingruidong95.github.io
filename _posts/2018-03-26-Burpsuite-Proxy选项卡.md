@@ -81,9 +81,9 @@ Do intercept选项可以针对此消息来拦截其服务器返回的信息。
 >自动更新Content-Length消息头
 
 #### 拦截规则配置
-如果intercept request based on the follow rules被选中，则按下方勾选的规则进行拦截。要注意，拦截时对规则的执行是自上而下的。可以通过点击Up和Down按钮对规则的顺序进行调节。</br>
-Operator是指当前规则与其它规则之间的关系，or 或者 and</br>
-Match type是指匹配类型，如域名、IP地址、协议、请求方法、URL等</br>
+如果intercept request based on the follow rules被选中，则按下方勾选的规则进行拦截。要注意，拦截时对规则的执行是自上而下的。可以通过点击Up和Down按钮对规则的顺序进行调节  
+Operator是指当前规则与其它规则之间的关系，or 或者 and  
+Match type是指匹配类型，如域名、IP地址、协议、请求方法、URL等  
 Relationship是指此条规则是否匹配Condition中输入的关键字  
 
 #### 错误消息自动修复
