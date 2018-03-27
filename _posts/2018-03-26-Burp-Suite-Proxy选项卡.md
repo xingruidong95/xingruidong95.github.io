@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Brupsuite Proxy选项卡
+title: Burp Suite Proxy选项卡
 key: 20180326
-tags: Brupsuite
+tags: Burp Suite
 ---
 
-关于Brupsuite中Proxy选项卡的各功能介绍
+关于Burp Suite中Proxy选项卡的各功能介绍
 - Intercept
 - HTTP history
 - WebSockets history
@@ -14,7 +14,7 @@ tags: Brupsuite
 <!--more-->
 
 ## Intercept
-该选项卡主要负责Brupsuite Proxy的拦截功能，主要分为以下四个子选项卡
+该选项卡主要负责Burp Suite Proxy的拦截功能，主要分为以下四个子选项卡
 - Forward
 - Drop
 - Intercept is on
@@ -27,7 +27,7 @@ tags: Brupsuite
 通过该选项卡，你可以将消息丢弃，使消息不能到达服务器。
 
 ### Intercept is on
-通过该选项卡来选择是否拦截通过Brupsuite的请求数据，凸起为关闭状态，表示不拦截，凹陷为打开状态，拦截请求。
+通过该选项卡来选择是否拦截通过Burp Suite的请求数据，凸起为关闭状态，表示不拦截，凹陷为打开状态，拦截请求。
 
 ### Action
 可以通过该选项卡将当前拦截到的消息传递到Spider、Scanner、Intruder、 Repeater、Sequencer、Decoder等其他与Proxy同级别的选项卡。  
@@ -87,8 +87,8 @@ Match type是指匹配类型，如域名、IP地址、协议、请求方法、UR
 Relationship是指此条规则是否匹配Condition中输入的关键字  
 
 #### 错误消息自动修复
-如果Automatically fix missing or superfluous new lines at end of request被选中，则表示在消息传输中，Brupsuite会自动修复丢失或多余的新行。  
->一条被修改过的请求消息，如果丢失了头部结束的空行，Brupsuite会自动添加上；如果一次请求的消息体中，URL编码参数中包含任何新的换行，Brupsuite将会移除。此项功能在手工修改请求消息时，为了防止错误，有很好的保护效果。  
+如果Automatically fix missing or superfluous new lines at end of request被选中，则表示在消息传输中，Burp Suite会自动修复丢失或多余的新行。  
+>一条被修改过的请求消息，如果丢失了头部结束的空行，Burp Suite会自动添加上；如果一次请求的消息体中，URL编码参数中包含任何新的换行，Burp Suite将会移除。此项功能在手工修改请求消息时，为了防止错误，有很好的保护效果。  
 
 #### 自动更新Content-Length消息头
 如果Automatically update Content-Length header when the request is edited被选中，则当请求的消息被修改后，Content-Length消息头部也会自动被修改，替换为与之相对应的值。  
@@ -124,4 +124,4 @@ Relationship是指此条规则是否匹配Condition中输入的关键字  
 - 在http：// burp中禁用Web界面
 - 不在浏览器中显示Burp Suite错误
 - 不要将项目发送到代理历史记录或其他Burp工具  
->Brupsuite的Proxy选项卡就介绍到这里了，写这篇文章的时候多有借鉴“Brupsuite实战指南”，第一次写这种东西，好累的QAQ
+>Burp Suite的Proxy选项卡就介绍到这里了，写这篇文章的时候多有借鉴“Burp Suite实战指南”，第一次写这种东西，好累的QAQ
