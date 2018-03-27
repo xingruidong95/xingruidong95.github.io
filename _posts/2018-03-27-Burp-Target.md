@@ -35,6 +35,7 @@ tags: BurpSuite
 >Burp Spider抓取哪些内容  
 >Burp Scanner自动扫描哪些作用域的安全漏洞  
 >在Burp Intruder和Burp Repeater 中指定URL  
+
 该页面由两部分组成，一个是Include in scope（包含规则），另一个为Exclude from scope（去除规则）。特别注意的是，出现在Include列表中的规则将会被拦截，而出现在Exclude列表中的规则允许通过。选中Use advanced scope control按钮，则添加规则时，会出现高级选项，可以从协议、主机名/IP地址、端口、文件名4个维度去控制规则。
 
 ## Target部分工具
