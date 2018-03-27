@@ -30,7 +30,7 @@ tags: Brupsuite
 通过该选项卡来选择是否拦截通过Brupsuite的请求数据，凸起为关闭状态，表示不拦截，凹陷为打开状态，拦截请求。
 
 ### Action
-可以通过该选项卡将当前拦截到的消息传递到Spider、Scanner、Intruder、 Repeater、Sequencer、Decoder等其他与Proxy同级别的选项卡。
+可以通过该选项卡将当前拦截到的消息传递到Spider、Scanner、Intruder、 Repeater、Sequencer、Decoder等其他与Proxy同级别的选项卡。  
 另外还可以做一些请求消息的修改，通过Change request method可以修改消息的请求方式，如GET变为POST。通过Change body encoding可以改变请求body的编码。
 Don't intercept requests选项可以对请求消息进行不拦截类型设置，如不拦截此主机/IP地址/文件类型/目录的消息。
 Do intercept选项可以针对此消息来拦截其服务器返回的信息。
@@ -76,9 +76,9 @@ Do intercept选项可以针对此消息来拦截其服务器返回的信息。
 - Miscellaneous
 
 ### Intercept Client Requests
->拦截规则配置  
->错误消息自动修复  
->自动更新Content-Length消息头
+- 拦截规则配置
+- 错误消息自动修复
+- 自动更新Content-Length消息头
 
 #### 拦截规则配置
 如果intercept request based on the follow rules被选中，则按下方勾选的规则进行拦截。要注意，拦截时对规则的执行是自上而下的。可以通过点击Up和Down按钮对规则的顺序进行调节  
@@ -98,12 +98,30 @@ Relationship是指此条规则是否匹配Condition中输入的关键字  
 
 ### Response Modification
 每一个选项分别对应的功能如下：
->显示form表单中隐藏字段  
->高亮显示form表单中隐藏字段  
->使form表单中的disable字段生效，变成可输入域  
->移除输入域长度限制  
->移动JavaScript验证  
->移动所有的JavaScript  
->移除标签  
->转换https超链接为http链接  
->移除所有cookie中的安全标志  
+- 显示form表单中隐藏字段
+- 高亮显示form表单中隐藏字段
+- 使form表单中的disable字段生效，变成可输入域
+- 移除输入域长度限制
+- 移动JavaScript验证
+- 移动所有的JavaScript
+- 移除标签
+- 转换https超链接为http链接
+- 移除所有cookie中的安全标志  
+
+### March and Replace
+用来自动替换请求及响应消息中的值和文本
+
+### Miscellaneous
+杂项
+- 指定使用HTTP/1.0协议与服务器通信
+- 指定使用HTTP/1.0协议与客户端通信（主要用于显示浏览器的某些方面的特征，比如，阻止HTTP管道攻击）
+- 设置回复消息头“Connection:close”（可用于某些情况下的阻止HTTP管道攻击）
+- 设置请求消息中“Connection:close”
+- 请求消息头中脱掉代理服务器信息
+- 在接收到的请求中去除Accept-Encoding头部（不勾选可能会导致编码问题）
+- 在传入请求中剥离Sec-WebSocket-扩展头（不勾选可能会导致编码问题）
+- 解压请求/回复消息中的压缩文件
+- 在http：// burp中禁用Web界面
+- 不在浏览器中显示Burp Suite错误
+- 不要将项目发送到代理历史记录或其他Burp工具  
+>Brupsuite的Proxy选项卡就介绍到这里了，写这篇文章的时候多有借鉴“Brupsuite实战指南”，第一次写这种东西，好累的QAQ
