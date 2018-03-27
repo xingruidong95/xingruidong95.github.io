@@ -10,6 +10,6 @@ key: page-about
 
 luckyeast
 
-> 信息安全方向努力中
+> 信息安全方向努力中，weibo：@我才不理呐
 
 
