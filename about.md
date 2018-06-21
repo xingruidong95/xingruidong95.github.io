@@ -10,6 +10,7 @@ key: page-about
 
 luckyeast
 
-> 信息安全方向努力中，weibo：@我才不理呐
+> 信息安全方向努力中，weibo：@我才不理呐  
+> 微信公众号：梦中碎碎念
 
 
